@@ -30,8 +30,6 @@ export type Link = {
 export type NavItem = {
   label: string;
   link: string;
-  className: string;
-  ref?: unknown;
 };
 
 export type Review = {
