@@ -5,3 +5,5 @@ export { default as Button } from "./Button";
 export { default as About } from "./About";
 export { default as Skill } from "./Skill";
 export { default as SkillCard } from "./SkillCard";
+export { default as Work } from "./Work";
+export { default as ProjectCard } from "./ProjectCard";
