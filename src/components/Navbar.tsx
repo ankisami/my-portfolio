@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { navItems } from "../constants/Navbar";
 import classnames from "classnames";
 
@@ -9,11 +9,11 @@ type NavbarProps = {
 
 const Navbar = ({ navOpen, setNavOpen }: NavbarProps) => {
   const [sectionSelected, setSectionSelected] = useState(navItems[0].label);
-  const activeBox = useRef<HTMLDivElement>(null);
+  // const activeBox = useRef<HTMLDivElement>(null);
 
   const handleNavClick = (section: string) => {
     setSectionSelected(section);
-    // setNavOpen(false);
+    setNavOpen(false);
   };
 
   return (
@@ -30,7 +30,8 @@ const Navbar = ({ navOpen, setNavOpen }: NavbarProps) => {
           {label}
         </a>
       ))}
-      <div className="active-box" ref={activeBox}></div>
+      {/* TODO : Add active box with slider animation later */}
+      {/* <div className="active-box" ref={activeBox}></div> */}
     </nav>
   );
 };

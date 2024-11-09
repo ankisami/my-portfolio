@@ -19,7 +19,9 @@ body {
 .navbar {
   @apply absolute top-full mt-2 right-0 min-w-40 p-2 
   bg-zinc-50/10 rounded-2xl ring-inset ring-1 ring-zinc-50/5
-  scale-90 isolate blur-sm opacity-0 invisible transition-all;
+  scale-90 isolate blur-sm opacity-0 invisible transition-all
+  md:flex md:static md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible
+  md:scale-100 md:backdrop-blur-2xl;
 }
 
 .navbar.active {
@@ -27,13 +29,28 @@ body {
 }
 
 .nav-link {
-  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-all;
+  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide
+   text-zinc-50/50 hover:text-zinc-50 transition-all rounded-lg;
 }
 
 .nav-link.active {
-  @apply text-zinc-900 duration-500;
+  @apply text-zinc-900 duration-500 bg-zinc-50;
 }
 
 .navbar .active-box {
-  @apply absolute bg-zinc-50 rounded-lg -z-10 transition-all duration-500;
+  @apply absolute bg-zinc-50 -z-10 transition-all duration-500;
+}
+
+.btn {
+  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm 
+  ring-1 ring-zinc-50/5 ring-inset transition-all;
+}
+
+.btn-secondary {
+  @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80;
+}
+
+.material-symbols-rounded {
+  @apply w-[1em] h-[1em] overflow-hidden;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
 }
