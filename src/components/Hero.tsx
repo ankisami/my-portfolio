@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const Hero = () => {
   return (
@@ -29,7 +30,13 @@ const Hero = () => {
           </h2>
 
           <div className="flex items-center gap-3">
-            ButtonPrimary ButtonOutline
+            <Button label="Download CV" icon="download" />{" "}
+            <Button
+              variant="outline"
+              label="Scroll down"
+              href="#about"
+              icon="arrow_downward"
+            />
           </div>
         </div>
 
