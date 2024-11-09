@@ -10,6 +10,29 @@ body {
   @apply bg-zinc-900 text-zinc-50 h-[200vh];
 }
 
+.container {
+  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
+}
+
+.img-box {
+  @apply bg-zinc-700 overflow-hidden;
+}
+
+.img-cover {
+  @apply w-full h-full object-cover;
+}
+
+.headline-1 {
+  @apply max-w-max;
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headline-1 {
+  @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15];
+}
+
 .menu-btn {
   @apply w-10 h-10 grid place-items-center bg-zinc-50/10 rounded-xl 
     ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 
