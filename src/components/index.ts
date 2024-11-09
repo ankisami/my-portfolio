@@ -7,3 +7,5 @@ export { default as Skill } from "./Skill";
 export { default as SkillCard } from "./SkillCard";
 export { default as Work } from "./Work";
 export { default as ProjectCard } from "./ProjectCard";
+export { default as Review } from "./Reviews";
+export { default as ReviewCard } from "./ReviewCard";
