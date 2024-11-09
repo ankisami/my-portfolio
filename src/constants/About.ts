@@ -3,10 +3,10 @@ import { AboutItem } from "../types";
 export const aboutItems: AboutItem[] = [
   {
     label: "Project done",
-    number: 45,
+    number: 14,
   },
   {
     label: "Years of experience",
-    number: 10,
+    number: 5,
   },
 ];
