@@ -13,7 +13,7 @@ const SkillCard = ({ imgSrc, label, desc, className }: SkillCardProps) => {
         className
       )}
     >
-      <figure className="bg-zinc-700/50 rounded-lg overflow-hidden w-12 h-12 p-2 group-hoper:bg-zinc-900 transition-colors">
+      <figure className="bg-zinc-700/50 rounded-lg overflow-hidden w-12 h-12 p-2 flex items-center justify-center group-hover:bg-zinc-900 transition-colors">
         <img src={imgSrc} width={40} height={40} alt={label} />
       </figure>
 

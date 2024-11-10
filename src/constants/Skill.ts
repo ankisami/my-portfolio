@@ -2,19 +2,34 @@ import { Skill } from "../types";
 
 export const skillItem: Skill[] = [
   {
-    imgSrc: "/images/figma.svg",
-    label: "Figma",
-    desc: "Design tool",
+    imgSrc: "/images/react.svg",
+    label: "React",
+    desc: "Library",
+  },
+  {
+    imgSrc: "/images/nextjs.svg",
+    label: "NextJS",
+    desc: "Framework",
+  },
+  {
+    imgSrc: "/images/react-native.svg",
+    label: "React Native",
+    desc: "Library",
+  },
+  {
+    imgSrc: "/images/typescript.svg",
+    label: "TypeScript",
+    desc: "Language",
+  },
+  {
+    imgSrc: "/images/javascript.svg",
+    label: "JavaScript",
+    desc: "Language",
   },
   {
     imgSrc: "/images/css3.svg",
     label: "CSS",
     desc: "User Interface",
-  },
-  {
-    imgSrc: "/images/javascript.svg",
-    label: "JavaScript",
-    desc: "Interaction",
   },
   {
     imgSrc: "/images/nodejs.svg",
@@ -32,9 +47,9 @@ export const skillItem: Skill[] = [
     desc: "Database",
   },
   {
-    imgSrc: "/images/react.svg",
-    label: "React",
-    desc: "Framework",
+    imgSrc: "/images/figma.svg",
+    label: "Figma",
+    desc: "Design tool",
   },
   {
     imgSrc: "/images/tailwindcss.svg",

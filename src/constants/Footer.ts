@@ -26,22 +26,14 @@ export const sitemap: Link[] = [
 export const socials: Link[] = [
   {
     label: "GitHub",
-    href: "https://www.github.com/codewithsadee-org",
+    href: "https://github.com/ankisami",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/codewithsadee",
-  },
-  {
-    label: "Twitter X",
-    href: "https://x.com/codewithsadee_",
+    href: "https://www.linkedin.com/in/sami-anki/",
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/codewithsadee",
-  },
-  {
-    label: "CodePen",
-    href: "https://codepen.io/codewithsadee",
+    href: "https://www.instagram.com/sam_eee13/",
   },
 ];
