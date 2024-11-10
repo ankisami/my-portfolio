@@ -6,6 +6,7 @@ import {
   Work,
   Review,
   Contact,
+  Footer,
 } from "./components";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Review />
         <Contact />
       </main>
+      <Footer />
     </>
   );
 }
