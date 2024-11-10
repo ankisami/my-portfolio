@@ -24,15 +24,19 @@ const Reviews = () => {
       <div className="container">
         <h2 className="headline-2 mb-8 reveal-up">My References</h2>
         <div className="scrub-slide flex items-stretch gap-3 w-fit">
-          {reviews.map(({ content, name, imgSrc, company }, key) => (
-            <ReviewCard
-              key={`review-${name}-${key}`}
-              content={content}
-              name={name}
-              imgSrc={imgSrc}
-              company={company}
-            />
-          ))}
+          {reviews.map(
+            ({ content, name, imgSrc, company, linkedin, job }, key) => (
+              <ReviewCard
+                key={`review-${name}-${key}`}
+                content={content}
+                name={name}
+                imgSrc={imgSrc}
+                company={company}
+                linkedin={linkedin}
+                job={job}
+              />
+            )
+          )}
         </div>
       </div>
     </section>

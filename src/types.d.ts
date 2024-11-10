@@ -36,5 +36,7 @@ export type Review = {
   content: string;
   name: string;
   imgSrc: string;
+  job: string;
   company: string;
+  linkedin: string;
 };

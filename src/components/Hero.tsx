@@ -9,7 +9,7 @@ const Hero = () => {
           <div className="flex items-center gap-3">
             <figure className="img-box h-9 w-9 rounded-lg">
               <img
-                src="/images/avatar-1.png"
+                src="/images/sami.jpg"
                 width={40}
                 height={40}
                 alt="hero"
