@@ -1,51 +1,60 @@
-# React + TypeScript + Vite
+<div align="center">
+  <h1>My Portfolio</h1>
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[url: Live Demo](https://my-portfolio-ankisamis-projects.vercel.app/)
 
-Currently, two official plugins are available:
+# Modern Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A modern and responsive UI/UX website built with **React.js**, **Vite**, and **Tailwind CSS**. 
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Vite**: A fast build tool for modern web projects.
+- **React.js**: A JavaScript library for building user interfaces.
+- **Tailwind CSS**: A utility-first CSS framework for rapidly building custom designs.
 
-- Configure the top-level `parserOptions` property like this:
+## 🌟 Screenshots
+<img width="1680" alt="my-portfolio" src="https://github.com/user-attachments/assets/7d7726d8-bb5f-4ee7-95cb-14ad5a22c529">
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 📱 Responsiveness
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+The website is fully responsive and works seamlessly across devices:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# my-portfolio
+- **Mobile**: Optimized for touch interactions and smaller screens.
+- **Tablet**: Adaptive layout with easy navigation.
+- **Desktop**: Fully optimized for large screens, providing a rich visual experience.
+
+---
+
+## 📌 Getting Started
+
+To get started with the project locally:
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/ankisami/my-portfolio.git
+   ```
+
+2. **Install dependencies**:
+   Navigate to the project directory and run:
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and go to `http://localhost:xxxx` to see the website in action.
+
+---
+
+## 📑 License
+
+This project is licensed under the [MIT License](LICENSE).
