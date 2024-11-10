@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 
 const Hero = () => {
@@ -21,7 +20,7 @@ const Hero = () => {
               <span className="relative w-2 h-2 rounded-full bg-emerald-400">
                 <span className="absolute inset-0 rounded-full bg-emerald-400 animate-ping"></span>
               </span>
-              Available for work
+              <p>Available for work</p>
             </div>
           </div>
 
@@ -46,7 +45,7 @@ const Hero = () => {
               src="/images/hero-banner-2.png"
               width={656}
               height={800}
-              alt="My photo"
+              alt="My profile"
               className="w-full"
             />
           </figure>
