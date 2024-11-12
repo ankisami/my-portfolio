@@ -28,9 +28,9 @@ const ProjectCard = ({
           <h3 className="title-1 mb-3">{title}</h3>
 
           <div className="flex flex-wrap items-center gap-2">
-            {tags.map((tag, index) => (
+            {tags.map((tag) => (
               <span
-                key={index}
+                key={tag}
                 className="h-8 text-sm text-zinc-400 bg-zinc-50/5 grid items-center px-3 rounded-lg truncate"
               >
                 {tag}
@@ -46,7 +46,12 @@ const ProjectCard = ({
         </div>
       </div>
 
-      <a href={projectLink} className="absolute inset-0" target="_blank" />
+      <a
+        href={projectLink}
+        className="absolute inset-0"
+        target="_blank"
+        aria-label={`Link to ${title}`}
+      />
     </div>
   );
 };
