@@ -7,6 +7,7 @@ type ButtonProps = {
   target?: string;
   icon?: string;
   className?: string;
+  onClick?: () => void;
 };
 
 const Button = ({
@@ -16,6 +17,7 @@ const Button = ({
   href,
   icon,
   className,
+  onClick: handleClick,
 }: ButtonProps) => {
   const customClass = classNames(
     "btn",
@@ -42,7 +44,7 @@ const Button = ({
     );
 
   return (
-    <button className={customClass}>
+    <button className={customClass} onClick={handleClick}>
       {label}
       {icon && (
         <span className="material-symbols-rounded" aria-hidden>

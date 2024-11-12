@@ -7,6 +7,7 @@ import {
   Review,
   Contact,
   Footer,
+  Experiences,
 } from "./components";
 import { ReactLenis } from "lenis/react";
 import { gsap } from "gsap";
@@ -43,6 +44,7 @@ function App() {
         <About />
         <Skill />
         <Work />
+        <Experiences />
         <Review />
         <Contact />
       </main>

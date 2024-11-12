@@ -14,6 +14,10 @@ export const navItems: NavItem[] = [
     link: "#work",
   },
   {
+    label: "Experiences",
+    link: "#experiences",
+  },
+  {
     label: "Reviews",
     link: "#reviews",
   },
