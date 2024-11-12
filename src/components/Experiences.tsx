@@ -3,6 +3,7 @@ import Button from "./Button";
 import classnames from "classnames";
 import { work, education } from "../constants/Experience";
 import ExperienceCard from "./ExperienceCard";
+import React from "react";
 
 const Experiences = () => {
   const [categorySelected, setCategorySelected] = useState<
@@ -42,16 +43,53 @@ const Experiences = () => {
           />
         </div>
 
-        <div className="flex flex-col  w-full justify-center items-center gap-4">
-          {cards.map(({ title, company, duration, description }, index) => (
-            <ExperienceCard
-              key={`${index}_${title}`}
-              title={title}
-              company={company}
-              duration={duration}
-              description={description}
-            />
-          ))}
+        <div
+          className="grid grid-cols-3 gap-y-0 gap-x-12"
+          style={{ gridTemplateColumns: "1fr max-content 1fr" }}
+        >
+          {cards.map(
+            ({ title, company, duration, description, tags }, index) => (
+              <React.Fragment key={`${index}_${title}`}>
+                {index % 2 === 0 ? (
+                  <>
+                    <div className="justify-self-end">
+                      <ExperienceCard
+                        title={title}
+                        company={company}
+                        duration={duration}
+                        description={description}
+                        tags={tags}
+                      />
+                    </div>
+                    <div className="relative flex items-center justify-center h-full">
+                      <div className="w-0.5 h-full bg-white"></div>
+                      {index !== cards.length && (
+                        <div className="absolute top-1/2 transform -translate-y-1/2 w-3.5 h-3.5 bg-white rounded-full"></div>
+                      )}
+                    </div>
+                    <div />
+                  </>
+                ) : (
+                  <>
+                    <div />
+                    <div className="relative flex items-center justify-center h-full">
+                      <div className="w-0.5 h-full bg-white"></div>
+                      {index !== cards.length && (
+                        <div className="absolute top-1/2 transform -translate-y-1/2 w-3.5 h-3.5 bg-white rounded-full"></div>
+                      )}
+                    </div>
+                    <ExperienceCard
+                      title={title}
+                      company={company}
+                      duration={duration}
+                      description={description}
+                      tags={tags}
+                    />
+                  </>
+                )}
+              </React.Fragment>
+            )
+          )}
         </div>
       </div>
     </section>

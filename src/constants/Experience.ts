@@ -27,26 +27,37 @@ export const work: Experience[] = [
     title: "Software Development Engineer",
     company: "Airship - France",
     duration: "Since November 2023",
-    description:
-      "React - TypeScript - Gitlab CI/CD - Agile methodology - English",
+    tags: [
+      "React",
+      "TypeScript",
+      "Gitlab CI/CD",
+      "Agile methodology",
+      "English",
+    ],
   },
   {
     title: "React Native Developer",
     company: "Luko",
     duration: "From April 2022 to November 2023",
-    description: "React Native - TypeScript - Agile methodology",
+    tags: ["React Native", "TypeScript", "Agile methodology"],
   },
   {
     title: "Software Development Engineer",
     company: "Capgemini - Sogeti France",
     duration: "From May 2020 to April 2022",
-    description:
-      "React - React Native - Next.js - TypeScript - Agile methodology - English",
+    tags: [
+      "React",
+      "React Native",
+      "Next.js",
+      "TypeScript",
+      "Agile methodology",
+      "English",
+    ],
   },
   {
     title: "React Native Developer",
     company: "Nobo",
     duration: "From June 2019 to May 2020",
-    description: "React Native - JavaScript - Agile methodology",
+    tags: ["React Native", "JavaScript", "Agile methodology"],
   },
 ];
