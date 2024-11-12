@@ -25,9 +25,7 @@ const ExperienceCard = ({
         ))}
       </div>
 
-      {description && (
-        <p className="h-6 text-xs text-zinc-400">{description}</p>
-      )}
+      {description && <p className="text-xs text-zinc-400">{description}</p>}
 
       <div className="flex  items-center italic text-zinc-400 text-sm gap-3">
         <span className="material-symbols-rounded">calendar_month</span>
