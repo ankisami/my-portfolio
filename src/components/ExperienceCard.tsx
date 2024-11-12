@@ -18,7 +18,7 @@ const ExperienceCard = ({
         {tags?.map((tag) => (
           <span
             key={tag}
-            className="text-xs text-zinc-400 bg-zinc-50/5 grid items-center px-3  rounded-lg truncate"
+            className="h-6 text-xs text-zinc-400 bg-zinc-50/5 grid items-center px-3  rounded-lg truncate"
           >
             {tag}
           </span>
